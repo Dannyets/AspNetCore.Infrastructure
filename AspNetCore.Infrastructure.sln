@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Infrastructure.Controllers", "AspNetCore.Infrastructure.Controllers\AspNetCore.Infrastructure.Controllers.csproj", "{7A2BDF75-63B2-4F5C-A8E9-22C51A9B8D67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{4B59FAA7-1780-477E-9051-38D5579F297D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Infrastructure.DAL", "AspNetCore.Infrastructure.DAL\AspNetCore.Infrastructure.DAL.csproj", "{E2FE8106-82F8-4BF1-95B3-BEED10252604}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFrameworkCore", "Repositories.EntityFrameworkCore\Repositories.EntityFrameworkCore.csproj", "{C7707551-AD4C-4376-9DAF-515974B465A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFrameworkCore.MySql", "Repositories.EntityFrameworkCore.MySql\Repositories.EntityFrameworkCore.MySql.csproj", "{6E37BB56-639D-40A8-9653-31D500F353E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFrameworkCore.Models", "Repositories.EntityFrameworkCore.Models\Repositories.EntityFrameworkCore.Models.csproj", "{E0544D03-0F42-4A72-A212-19A5AAD68B10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A2BDF75-63B2-4F5C-A8E9-22C51A9B8D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A2BDF75-63B2-4F5C-A8E9-22C51A9B8D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A2BDF75-63B2-4F5C-A8E9-22C51A9B8D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A2BDF75-63B2-4F5C-A8E9-22C51A9B8D67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2FE8106-82F8-4BF1-95B3-BEED10252604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2FE8106-82F8-4BF1-95B3-BEED10252604}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2FE8106-82F8-4BF1-95B3-BEED10252604}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2FE8106-82F8-4BF1-95B3-BEED10252604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B59FAA7-1780-477E-9051-38D5579F297D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B59FAA7-1780-477E-9051-38D5579F297D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B59FAA7-1780-477E-9051-38D5579F297D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B59FAA7-1780-477E-9051-38D5579F297D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7707551-AD4C-4376-9DAF-515974B465A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7707551-AD4C-4376-9DAF-515974B465A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7707551-AD4C-4376-9DAF-515974B465A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7707551-AD4C-4376-9DAF-515974B465A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E37BB56-639D-40A8-9653-31D500F353E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E37BB56-639D-40A8-9653-31D500F353E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E37BB56-639D-40A8-9653-31D500F353E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E37BB56-639D-40A8-9653-31D500F353E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0544D03-0F42-4A72-A212-19A5AAD68B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0544D03-0F42-4A72-A212-19A5AAD68B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0544D03-0F42-4A72-A212-19A5AAD68B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0544D03-0F42-4A72-A212-19A5AAD68B10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

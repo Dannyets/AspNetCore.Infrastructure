@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.MySql</PackageId>
+    <Authors>Danny Etsebban</Authors>
+    <Company />
+    <Product />
+    <Description>My sql extension helpers for entity framework core repository</Description>
+    <PackageProjectUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</RepositoryUrl>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

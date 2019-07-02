@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFramewor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFrameworkCore.Models", "Repositories.EntityFrameworkCore.Models\Repositories.EntityFrameworkCore.Models.csproj", "{E0544D03-0F42-4A72-A212-19A5AAD68B10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{A3242B76-183A-450B-99CB-EC590E9C0406}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{CC7705CA-E6E5-4069-B48B-19535786C63A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7707551-AD4C-4376-9DAF-515974B465A4} = {CC7705CA-E6E5-4069-B48B-19535786C63A}
+		{6E37BB56-639D-40A8-9653-31D500F353E6} = {CC7705CA-E6E5-4069-B48B-19535786C63A}
+		{E0544D03-0F42-4A72-A212-19A5AAD68B10} = {CC7705CA-E6E5-4069-B48B-19535786C63A}
+		{CC7705CA-E6E5-4069-B48B-19535786C63A} = {A3242B76-183A-450B-99CB-EC590E9C0406}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {575F3EE4-7DD6-40C8-BAE9-F303D5D17A61}

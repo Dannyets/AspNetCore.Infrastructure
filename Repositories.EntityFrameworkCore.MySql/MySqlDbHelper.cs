@@ -36,7 +36,7 @@ namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.MySql
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Failed to connect to db. \nReason: {ex.me}");
+                Console.WriteLine($"Failed to connect to db. \nReason: {ex.Message}");
             }
         }
 

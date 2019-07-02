@@ -30,22 +30,30 @@ namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.MySql
 
             TryConnectToDb(connectionString);
 
-            optionsBuilder.UseMySql(connectionString);
+            try
+            {
+                optionsBuilder.UseMySql(connectionString);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to connect to db. \nReason: {ex.me}");
+            }
         }
 
-        public static void TryConnectToDb(string connectionString)
+        public static void TryConnectToDb(string connectionString, int maxRetries = 3)
         {
             var connection = new MySqlConnection(connectionString);
-            var retries = 1;
+            var retries = 0;
+            var isConnectionOpen = false;
 
-            while (retries < 7)
+            while (retries < maxRetries && !isConnectionOpen)
             {
                 try
                 {
                     Console.WriteLine("Connecting to db. Trial: {0}", retries);
                     connection.Open();
                     connection.Close();
-                    break;
+                    isConnectionOpen = true;
                 }
                 catch (MySqlException)
                 {

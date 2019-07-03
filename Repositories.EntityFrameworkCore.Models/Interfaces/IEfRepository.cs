@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models
 {
-    public interface IEfRepository<T> where T : BaseEntity
+    public interface IEfRepository<T> where T : BaseDbEntity
     {
         Task<T> Add(T model);
 

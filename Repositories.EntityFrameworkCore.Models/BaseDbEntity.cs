@@ -2,7 +2,7 @@
 
 namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models
 {
-    public abstract class BaseEntity
+    public abstract class BaseDbEntity
     {
         public DateTime CreatedAt { get; set; }
 

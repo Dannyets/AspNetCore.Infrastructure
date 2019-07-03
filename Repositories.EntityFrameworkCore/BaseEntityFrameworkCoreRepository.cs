@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore
 {
-    public class BaseEntityFrameworkCoreRepository<T> : IEfRepository<T> where T : BaseEntity
+    public class BaseEntityFrameworkCoreRepository<T> : IEfRepository<T> where T : BaseDbEntity
     {
         protected readonly DbContext _dbContext;
         protected readonly DbSet<T> _dbSet;

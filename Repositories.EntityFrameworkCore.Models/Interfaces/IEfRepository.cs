@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models
+namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models.Interfaces
 {
     public interface IEfRepository<T> where T : BaseDbEntity
     {

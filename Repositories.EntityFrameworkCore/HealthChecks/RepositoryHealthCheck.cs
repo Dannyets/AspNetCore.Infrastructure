@@ -1,10 +1,11 @@
 ﻿using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models;
+using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models.Interfaces;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Repositories.EntityFrameworkCore.HealthChecks
+namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.HealthChecks
 {
     public class RepositoryHealthCheck<T> : IHealthCheck where T : BaseDbEntity
     {

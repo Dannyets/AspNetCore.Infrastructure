@@ -1,5 +1,5 @@
 ﻿using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models;
-using Repositories.EntityFrameworkCore.Models;
+using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models.Interfaces;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Repositories.EntityFrameworkCore
+namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore
 {
     public class BaseInMemoryRepository<T> : IEfRepository<T> where T : DbIdEntity
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Repositories.EntityFrameworkCore.Models
+namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models
 {
     public abstract class DbIdEntity : BaseDbEntity
     {

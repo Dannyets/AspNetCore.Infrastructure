@@ -9,7 +9,7 @@
     <Description>Entity framework core repository models</Description>
     <PackageProjectUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</RepositoryUrl>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
 </Project>

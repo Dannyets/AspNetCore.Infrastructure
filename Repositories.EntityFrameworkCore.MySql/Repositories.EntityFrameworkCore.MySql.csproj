@@ -9,7 +9,8 @@
     <Description>My sql extension helpers for entity framework core repository</Description>
     <PackageProjectUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</RepositoryUrl>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
+    <RootNamespace>AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.MySql</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

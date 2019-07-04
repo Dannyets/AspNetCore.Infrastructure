@@ -8,17 +8,6 @@ namespace AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.MySql
 {
     public static class MySqlDbHelper
     {
-        public static void MigrateDatabase<TDbContext>(IServiceProvider serivceProvider) where TDbContext : DbContext
-        {
-            using (var serviceScope = serivceProvider.GetRequiredService<IServiceScopeFactory>().CreateScope())
-            {
-                using (var context = serviceScope.ServiceProvider.GetService<TDbContext>())
-                {
-                    context.Database.Migrate();
-                }
-            }
-        }
-
         /// <summary>
         /// Use MySql to connect to db
         /// </summary>

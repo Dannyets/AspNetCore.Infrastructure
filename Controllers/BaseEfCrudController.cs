@@ -1,4 +1,5 @@
 ﻿using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models;
+using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,10 +10,10 @@ using System.Threading.Tasks;
 namespace AspNetCore.Infrastructure.Controllers
 {
     [Route("api/[controller]/[action]")]
-    public class BaseEfCrudController<TApiModel, TDbModel> : ControllerBase where TDbModel : BaseEntity
+    public class BaseEfCrudController<TApiModel, TDbModel> : ControllerBase where TDbModel : DbIdEntity
     {
         private readonly IEfRepository<TDbModel> _repository;
-        private readonly IMapper _mapper;
+        protected readonly IMapper _mapper;
 
         public BaseEfCrudController(IEfRepository<TDbModel> repository,
                                     IMapper mapper)

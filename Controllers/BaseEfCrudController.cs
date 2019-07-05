@@ -1,5 +1,4 @@
-﻿using AspNetCore.Infrastructure.Controllers.Interfaces;
-using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models;
+﻿using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models;
 using AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -11,8 +10,8 @@ using System.Threading.Tasks;
 namespace AspNetCore.Infrastructure.Controllers
 {
     [Route("api/[controller]/[action]")]
-    public class BaseEfCrudController<TApiModel, TDbModel> : ControllerBase where TDbModel : DbIdEntity, 
-                                                             ICrudApi<TApiModel>
+    public class BaseEfCrudController<TApiModel, TDbModel> : ControllerBase where TDbModel : DbIdEntity
+                                                             
     {
         private readonly IEfRepository<TDbModel> _repository;
         protected readonly IMapper _mapper;
@@ -45,19 +44,21 @@ namespace AspNetCore.Infrastructure.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] TApiModel value)
+        public async Task<ActionResult<TApiModel>> Post([FromBody] TApiModel apiModel)
         {
-            var dbEntity = _mapper.Map<TDbModel>(value);
+            var dbEntity = _mapper.Map<TDbModel>(apiModel);
 
-            await _repository.Add(dbEntity);
+            dbEntity = await _repository.Add(dbEntity);
 
-            return Ok();
+            apiModel = _mapper.Map<TApiModel>(dbEntity);
+
+            return Ok(apiModel);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] TApiModel value)
+        public async Task<IActionResult> Put(int id, [FromBody] TApiModel apiModel)
         {
-            var dbEntity = _mapper.Map<TDbModel>(value);
+            var dbEntity = _mapper.Map<TDbModel>(apiModel);
 
             await _repository.Update(dbEntity);
 

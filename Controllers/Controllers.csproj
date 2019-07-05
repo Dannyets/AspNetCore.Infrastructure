@@ -9,11 +9,12 @@
     <Description>Implementation of basic controllers</Description>
     <PackageProjectUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dannyets/AspNetCore.Infrastructure</RepositoryUrl>
-    <Version>1.1.2</Version>
+    <Version>1.3.0</Version>
     <RootNamespace>AspNetCore.Infrastructure.Controllers</RootNamespace>
   </PropertyGroup>
   
   <ItemGroup>
+    <PackageReference Include="AspNetCore.Infrastructure.Controllers.Data" Version="1.0.0" />
     <PackageReference Include="AspNetCore.Infrastructure.Repositories.EntityFrameworkCore.Models" Version="1.0.2" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />

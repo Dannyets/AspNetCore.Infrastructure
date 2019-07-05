@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{4B59FAA7-1780-477E-9051-38D5579F297D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controllers", "Controllers\Controllers.csproj", "{4B59FAA7-1780-477E-9051-38D5579F297D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFrameworkCore", "Repositories.EntityFrameworkCore\Repositories.EntityFrameworkCore.csproj", "{C7707551-AD4C-4376-9DAF-515974B465A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.EntityFrameworkCore", "Repositories.EntityFrameworkCore\Repositories.EntityFrameworkCore.csproj", "{C7707551-AD4C-4376-9DAF-515974B465A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFrameworkCore.MySql", "Repositories.EntityFrameworkCore.MySql\Repositories.EntityFrameworkCore.MySql.csproj", "{6E37BB56-639D-40A8-9653-31D500F353E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.EntityFrameworkCore.MySql", "Repositories.EntityFrameworkCore.MySql\Repositories.EntityFrameworkCore.MySql.csproj", "{6E37BB56-639D-40A8-9653-31D500F353E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.EntityFrameworkCore.Models", "Repositories.EntityFrameworkCore.Models\Repositories.EntityFrameworkCore.Models.csproj", "{E0544D03-0F42-4A72-A212-19A5AAD68B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.EntityFrameworkCore.Models", "Repositories.EntityFrameworkCore.Models\Repositories.EntityFrameworkCore.Models.csproj", "{E0544D03-0F42-4A72-A212-19A5AAD68B10}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{A3242B76-183A-450B-99CB-EC590E9C0406}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{CC7705CA-E6E5-4069-B48B-19535786C63A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers.Data", "Controllers.Data\Controllers.Data.csproj", "{51B39014-6C3C-40BC-AD6F-3442A268B333}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{E0544D03-0F42-4A72-A212-19A5AAD68B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0544D03-0F42-4A72-A212-19A5AAD68B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0544D03-0F42-4A72-A212-19A5AAD68B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B39014-6C3C-40BC-AD6F-3442A268B333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B39014-6C3C-40BC-AD6F-3442A268B333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B39014-6C3C-40BC-AD6F-3442A268B333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B39014-6C3C-40BC-AD6F-3442A268B333}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
